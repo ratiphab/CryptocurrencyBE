@@ -2,7 +2,6 @@
 
 ## 🚀 Features
 - Get Wallet data with user and cryptocurrency data
----
 
 ## ⚙️ **1. Clone Repository**
 ```
@@ -21,29 +20,32 @@ npm install
 npm install --save sequelize sequelize-cli mysql2
 npx sequelize-cli init
 ```
+## ⚙️ 4.create database
+run database server ที่เรามี(แนะนำเป็น mysql)
+ set database ที่เรามีให้ตรงกับ config โดยไปที่ config/config.json แล้วแก้ไข้ให้ตรงกัน
 
-## 🏗️ 4. Database Migration
+## 🏗️ 5. Database Migration
 ```
 npx sequelize-cli db:migrate
 ```
 
-## 🌱 5. Run Seeder (เพิ่มข้อมูลเริ่มต้น)
+## 🌱 6. Run Seeder (เพิ่มข้อมูลเริ่มต้น)
 ```
 npx sequelize-cli db:seed:all
 ```
 
-## ⚡ 6. Start Server
+## ⚡ 7. Start Server
 ```
 npm run dev
 ```
 
-## 🔍 7. ตรวจสอบ API
+## 🔍 8. ตรวจสอบ API
 
 ยิง postman ไปที่ http://localhost:3000/wallet?id=1
 
 สามารถเปลี่ยนหลัง id เป็น userId ที่ต้องการจะดึงได้
 
-## 🗑️ 8. คำสั่ง Reset Database (ในกรณีที่ต้องการล้างข้อมูล)
+## 🗑️ 9. คำสั่ง Reset Database (ในกรณีที่ต้องการล้างข้อมูล)
 
 ```
 npx sequelize-cli db:migrate:undo:all
